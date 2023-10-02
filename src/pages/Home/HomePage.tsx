@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import { Services } from "../../components/templates/Services";
+import { ServicesTemplate } from "../../components/templates/ServicesTemplate";
 import { getDocuments } from "../../Services/FirebaseService";
 import { StatusHandler } from "../../components/atoms/StatusHandler";
 
-
-export default function Home() {
+export function HomePage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [services, setServices] = useState([]);
@@ -26,17 +25,15 @@ export default function Home() {
 
   return (
     <>
-
-        {error ? (
-          <StatusHandler content={error} height="20vh" />
-        ) : loading ? (
-          <StatusHandler content="Loading ..." height="20vh" />
-        ) : services.length === 0 ? (
-          <StatusHandler content={"No Products Found"} height="20vh" />
-        ) : (
-          <Services services={services} />
-        )}
-
+      {error ? (
+        <StatusHandler content={error} height="20vh" />
+      ) : loading ? (
+        <StatusHandler content="Loading ..." height="20vh" />
+      ) : services.length === 0 ? (
+        <StatusHandler content={"No Products Found"} height="20vh" />
+      ) : (
+        <ServicesTemplate services={services} />
+      )}
     </>
   );
 }

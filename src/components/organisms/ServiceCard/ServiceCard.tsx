@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { ServiceType } from "../../../types";
 
-export function Service({
+export function ServiceCard({
   imageUrl,
   title,
   description,
@@ -20,6 +20,7 @@ export function Service({
           paddingInline: "1.5rem",
           paddingBlock: "1.5rem",
           boxShadow: "0px 8px 24px #EBF8FE",
+          marginBottom:"3rem"
         }}
       >
         <Box

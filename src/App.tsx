@@ -8,12 +8,12 @@ import {
 import RootLayout from "./layouts/RootLayout";
 import { ThemeProvider } from "@mui/material";
 import { theme } from "./Theme/Theme";
-import Home from "./pages/Home";
+import { HomePage } from "./pages/Home";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<HomePage />} />
     </Route>
   )
 );
