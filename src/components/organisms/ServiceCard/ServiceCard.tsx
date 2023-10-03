@@ -6,7 +6,7 @@ export function ServiceCard({
   imageUrl,
   title,
   description,
-  serviceID,
+  id,
 }: ServiceType) {
   return (
     <>
@@ -72,7 +72,7 @@ export function ServiceCard({
 
         <Typography
           component={Link}
-          to={`/about/${serviceID}`}
+          to={`/about/${id}`}
           sx={{
             fontSize: "1.15rem",
             fontWeight: "fontWeightRegular",
