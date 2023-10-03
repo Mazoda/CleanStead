@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import { ServiceType } from "../../../types";
 import { ServiceCard } from "../../organisms/ServiceCard";
 import { WrappedHeading } from "../../atoms/WrappedHeading";
@@ -9,21 +9,30 @@ export function ServicesTemplate({ services }: { services: ServiceType[] }) {
       <WrappedHeading heading="الخدمات التي نقدمها" />
       <Grid
         container
-        columns={{ xs: 6, sm: 6, md: 12 }}
-        spacing={{ xs: 4 }}
+        columns={{ xs: 2, md: 4, lg: 12 }}
+        spacing={{ xs: 4, md: 2 }}
         sx={{
           paddingTop: "2rem",
         }}
       >
         {services
           ? services.map((service: ServiceType) => (
-              <Grid item xs={6} sm={3} md={4} key={service.serviceID}>
-                <ServiceCard
-                  serviceID={service.serviceID}
-                  imageUrl={service.imageUrl}
-                  title={service.title}
-                  description={service.description}
-                ></ServiceCard>
+              <Grid item xs={2} md={2} lg={4} key={service.id}>
+                <Box
+                  sx={{
+                    paddingInline: {
+                      sm: "1rem",
+                      md: "0",
+                    },
+                  }}
+                >
+                  <ServiceCard
+                    id={service.id}
+                    imageUrl={service.imageUrl}
+                    title={service.title}
+                    description={service.description}
+                  ></ServiceCard>
+                </Box>
               </Grid>
             ))
           : "no data found"}
