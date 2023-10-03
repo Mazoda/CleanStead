@@ -2,7 +2,7 @@ export type ServiceType = {
   imageUrl: string;
   title: string;
   description: string;
-  serviceID: number;
+  id: number;
 };
 
 export type ReasonType = {
