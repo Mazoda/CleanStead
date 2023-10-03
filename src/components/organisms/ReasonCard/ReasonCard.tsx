@@ -14,7 +14,7 @@ export default function ReasonCard({
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          gap:"1rem",
+          gap: "1rem",
         }}
       >
         <IconBox IconSrc={iconUrl} BgColor="primary.light" />
@@ -30,8 +30,7 @@ export default function ReasonCard({
               color: "font.main",
               fontWeight: "fontWeightMedium",
               fontSize: "1.25rem",
-              alignSelf:"flex-start"
-              
+              alignSelf: "flex-start",
             }}
           >
             {title}
@@ -41,7 +40,12 @@ export default function ReasonCard({
               color: "font.grey",
               fontWeight: "fontWeightRegular",
               fontSize: "1.25rem",
-              alignSelf:"flex-start"
+              alignSelf: "flex-start",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+              display: "-webkit-box",
+              WebkitLineClamp: "2",
+              WebkitBoxOrient: "vertical",
             }}
           >
             {description}

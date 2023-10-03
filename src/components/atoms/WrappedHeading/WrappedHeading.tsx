@@ -12,8 +12,6 @@ export function WrappedHeading({
         display: "flex",
         justifyContent: "center",
         gap: ".8rem",
-        marginBlockStart:"3rem",
-        marginBlockEnd: "2.875rem",
       }}
     >
       <Box component={"img"} src={"assets/greenArrow.svg"} />

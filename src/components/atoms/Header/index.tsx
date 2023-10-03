@@ -27,8 +27,10 @@ export const Header = () => {
     <Box
       component={"header"}
       sx={{
+        height: "50px",
         display: "flex",
         justifyContent: "space-between",
+        gap: "1rem",
         alignItems: "center",
         marginBlock: "1.5rem",
       }}
@@ -88,7 +90,7 @@ export const Header = () => {
             to={``}
             sx={{
               fontWeight: "fontWeightRegular",
-              fontSize: "20px",
+              fontSize: { md: "1.25rem", xs: "1rem" },
               color: "font.main",
               display: "block",
               textTransform: "none",

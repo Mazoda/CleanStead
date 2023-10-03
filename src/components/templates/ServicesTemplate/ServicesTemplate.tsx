@@ -6,7 +6,14 @@ import { WrappedHeading } from "../../atoms/WrappedHeading";
 export function ServicesTemplate({ services }: { services: ServiceType[] }) {
   return (
     <div>
-      <WrappedHeading heading="الخدمات التي نقدمها" />
+      <Box
+        sx={{
+          marginBlockStart: "1rem",
+          marginBlockEnd: "5rem",
+        }}
+      >
+        <WrappedHeading heading="الخدمات التي نقدمها" />
+      </Box>
       <Grid
         container
         columns={{ xs: 2, md: 4, lg: 12 }}
