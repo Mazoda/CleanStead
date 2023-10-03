@@ -7,7 +7,15 @@ export function WrappedHeading({
   style?: { x: string };
 }) {
   return (
-    <Box display={"flex"} gap={".8rem"} marginBottom={"4rem"}>
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        gap: ".8rem",
+        marginBlockStart:"3rem",
+        marginBlockEnd: "5rem",
+      }}
+    >
       <Box component={"img"} src={"/src/assets/greenArrow.svg"} />
       <Typography
         component={"h1"}
