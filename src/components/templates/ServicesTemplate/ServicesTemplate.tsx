@@ -12,7 +12,7 @@ export function ServicesTemplate({ services }: { services: ServiceType[] }) {
         columns={{ xs: 6, sm: 6, md: 12 }}
         spacing={{ xs: 4 }}
         sx={{
-          paddingBlock: "1rem",
+          paddingTop: "2rem",
         }}
       >
         {services
