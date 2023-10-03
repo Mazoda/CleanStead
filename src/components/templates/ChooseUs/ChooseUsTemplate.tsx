@@ -15,7 +15,7 @@ export function ChooseUsTemplate({ reasons }: { reasons: ReasonType[] }) {
       >
         <Box
           component={"img"}
-          src="./assets/chooseUs.png"
+          src="assets/chooseUs.png"
           sx={{
             aspectRatio: "1/1",
             borderRadius:"1rem",

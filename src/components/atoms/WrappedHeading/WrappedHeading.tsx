@@ -16,7 +16,7 @@ export function WrappedHeading({
         marginBlockEnd: "2.875rem",
       }}
     >
-      <Box component={"img"} src={"./assets/greenArrow.svg"} />
+      <Box component={"img"} src={"assets/greenArrow.svg"} />
       <Typography
         component={"h1"}
         sx={{
@@ -31,7 +31,7 @@ export function WrappedHeading({
       </Typography>
       <Box
         component={"img"}
-        src={"./assets/greenArrow.svg"}
+        src={"assets/greenArrow.svg"}
         sx={{
           transform: "scaleX(-1)",
         }}

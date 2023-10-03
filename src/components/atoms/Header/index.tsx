@@ -51,7 +51,7 @@ export const Header = () => {
             aspectRatio: "1/1",
           }}
           component={"img"}
-          src="./assets/logo.png"
+          src="assets/logo.png"
           alt="Coral Logo"
         ></Box>
         <Typography
